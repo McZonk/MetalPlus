@@ -7,20 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		50157B85196A646D00FB5F5B /* MetalPlus.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 50157B84196A646D00FB5F5B /* MetalPlus.h */; };
-		50157B87196A646D00FB5F5B /* MetalPlus.m in Sources */ = {isa = PBXBuildFile; fileRef = 50157B86196A646D00FB5F5B /* MetalPlus.m */; };
-		50157B8D196A646D00FB5F5B /* libMetalPlus.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 50157B81196A646D00FB5F5B /* libMetalPlus.a */; };
+		50157BAB196A674000FB5F5B /* MTLPView.m in Sources */ = {isa = PBXBuildFile; fileRef = 50157BAA196A674000FB5F5B /* MTLPView.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		50157B8E196A646D00FB5F5B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 50157B79196A646D00FB5F5B /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 50157B80196A646D00FB5F5B;
-			remoteInfo = MetalPlus;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		50157B7F196A646D00FB5F5B /* CopyFiles */ = {
@@ -29,7 +17,6 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				50157B85196A646D00FB5F5B /* MetalPlus.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,10 +24,9 @@
 
 /* Begin PBXFileReference section */
 		50157B81196A646D00FB5F5B /* libMetalPlus.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMetalPlus.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		50157B84196A646D00FB5F5B /* MetalPlus.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MetalPlus.h; sourceTree = "<group>"; };
-		50157B86196A646D00FB5F5B /* MetalPlus.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MetalPlus.m; sourceTree = "<group>"; };
-		50157B8C196A646D00FB5F5B /* MetalPlusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MetalPlusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		50157B92196A646D00FB5F5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50157BA8196A674000FB5F5B /* MetalPlus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MetalPlus.h; sourceTree = "<group>"; };
+		50157BA9196A674000FB5F5B /* MTLPView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTLPView.h; sourceTree = "<group>"; };
+		50157BAA196A674000FB5F5B /* MTLPView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTLPView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,22 +37,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		50157B89196A646D00FB5F5B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				50157B8D196A646D00FB5F5B /* libMetalPlus.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		50157B78196A646D00FB5F5B = {
 			isa = PBXGroup;
 			children = (
-				50157B83196A646D00FB5F5B /* MetalPlus */,
-				50157B90196A646D00FB5F5B /* MetalPlusTests */,
+				50157BA7196A673300FB5F5B /* MetalPlus */,
 				50157B82196A646D00FB5F5B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -75,34 +52,18 @@
 			isa = PBXGroup;
 			children = (
 				50157B81196A646D00FB5F5B /* libMetalPlus.a */,
-				50157B8C196A646D00FB5F5B /* MetalPlusTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		50157B83196A646D00FB5F5B /* MetalPlus */ = {
+		50157BA7196A673300FB5F5B /* MetalPlus */ = {
 			isa = PBXGroup;
 			children = (
-				50157B84196A646D00FB5F5B /* MetalPlus.h */,
-				50157B86196A646D00FB5F5B /* MetalPlus.m */,
+				50157BA8196A674000FB5F5B /* MetalPlus.h */,
+				50157BA9196A674000FB5F5B /* MTLPView.h */,
+				50157BAA196A674000FB5F5B /* MTLPView.m */,
 			);
-			path = MetalPlus;
-			sourceTree = "<group>";
-		};
-		50157B90196A646D00FB5F5B /* MetalPlusTests */ = {
-			isa = PBXGroup;
-			children = (
-				50157B91196A646D00FB5F5B /* Supporting Files */,
-			);
-			path = MetalPlusTests;
-			sourceTree = "<group>";
-		};
-		50157B91196A646D00FB5F5B /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				50157B92196A646D00FB5F5B /* Info.plist */,
-			);
-			name = "Supporting Files";
+			name = MetalPlus;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,24 +86,6 @@
 			productReference = 50157B81196A646D00FB5F5B /* libMetalPlus.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		50157B8B196A646D00FB5F5B /* MetalPlusTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 50157B98196A646D00FB5F5B /* Build configuration list for PBXNativeTarget "MetalPlusTests" */;
-			buildPhases = (
-				50157B88196A646D00FB5F5B /* Sources */,
-				50157B89196A646D00FB5F5B /* Frameworks */,
-				50157B8A196A646D00FB5F5B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				50157B8F196A646D00FB5F5B /* PBXTargetDependency */,
-			);
-			name = MetalPlusTests;
-			productName = MetalPlusTests;
-			productReference = 50157B8C196A646D00FB5F5B /* MetalPlusTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -154,10 +97,6 @@
 				TargetAttributes = {
 					50157B80196A646D00FB5F5B = {
 						CreatedOnToolsVersion = 6.0;
-					};
-					50157B8B196A646D00FB5F5B = {
-						CreatedOnToolsVersion = 6.0;
-						TestTargetID = 50157B80196A646D00FB5F5B;
 					};
 				};
 			};
@@ -174,46 +113,20 @@
 			projectRoot = "";
 			targets = (
 				50157B80196A646D00FB5F5B /* MetalPlus */,
-				50157B8B196A646D00FB5F5B /* MetalPlusTests */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		50157B8A196A646D00FB5F5B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		50157B7D196A646D00FB5F5B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50157B87196A646D00FB5F5B /* MetalPlus.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		50157B88196A646D00FB5F5B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				50157BAB196A674000FB5F5B /* MTLPView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		50157B8F196A646D00FB5F5B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 50157B80196A646D00FB5F5B /* MetalPlus */;
-			targetProxy = 50157B8E196A646D00FB5F5B /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		50157B93196A646D00FB5F5B /* Debug */ = {
@@ -293,6 +206,11 @@
 		50157B96196A646D00FB5F5B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Applications/Xcode6-Beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include",
+					.,
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -302,41 +220,14 @@
 		50157B97196A646D00FB5F5B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Applications/Xcode6-Beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include",
+					.,
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		50157B99196A646D00FB5F5B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = MetalPlusTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				METAL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		50157B9A196A646D00FB5F5B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = MetalPlusTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				METAL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
@@ -359,14 +250,7 @@
 				50157B97196A646D00FB5F5B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		50157B98196A646D00FB5F5B /* Build configuration list for PBXNativeTarget "MetalPlusTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				50157B99196A646D00FB5F5B /* Debug */,
-				50157B9A196A646D00FB5F5B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
