@@ -39,9 +39,9 @@
 	self.layer.drawableSize = drawableSize;
 }
 
-- (id<CAMetalDrawable>)newDrawable
+- (id<CAMetalDrawable>)nextDrawable
 {
-	return self.layer.newDrawable;
+	return self.layer.nextDrawable;
 }
 
 - (BOOL)presentsWithTransaction

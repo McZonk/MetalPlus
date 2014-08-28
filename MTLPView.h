@@ -12,7 +12,7 @@
 
 @property (readwrite) CGSize drawableSize;
 
-- (id<CAMetalDrawable>)newDrawable;
+- (id<CAMetalDrawable>)nextDrawable;
 
 @property(getter=presentsWithTransaction) BOOL presentsWithTransaction;
 
