@@ -6,6 +6,8 @@
 
 @property (nonatomic, strong, readonly) CAMetalLayer *layer;
 
+@property (readwrite, retain) id <MTLDevice> device;
+
 @property (readwrite) MTLPixelFormat pixelFormat;
 
 @property (readwrite) BOOL framebufferOnly;

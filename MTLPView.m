@@ -9,6 +9,16 @@
 	return CAMetalLayer.class;
 }
 
+- (id<MTLDevice>)device
+{
+	return self.layer.device;
+}
+
+- (void)setDevice:(id<MTLDevice>)device
+{
+	self.layer.device = device;
+}
+
 - (MTLPixelFormat)pixelFormat
 {
 	return self.layer.pixelFormat;
