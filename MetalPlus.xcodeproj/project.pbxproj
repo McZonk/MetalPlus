@@ -8,18 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		50157BAB196A674000FB5F5B /* MTLPView.m in Sources */ = {isa = PBXBuildFile; fileRef = 50157BAA196A674000FB5F5B /* MTLPView.m */; };
-		50EFA5DA19AF3D3B00441F09 /* MTLPTexture+CGImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 50EFA5D919AF3D3B00441F09 /* MTLPTexture+CGImage.m */; };
-		50EFA5DD19AF3D4700441F09 /* MTLPTexture+UIImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 50EFA5DC19AF3D4700441F09 /* MTLPTexture+UIImage.m */; };
 		503BBC9819DF22AE002219B6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 503BBC9719DF22AE002219B6 /* main.m */; };
 		503BBC9B19DF22AE002219B6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 503BBC9A19DF22AE002219B6 /* AppDelegate.m */; };
-		503BBCA019DF22AE002219B6 /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 503BBC9F19DF22AE002219B6 /* Shaders.metal */; };
+		503BBCA019DF22AE002219B6 /* MTLPVectorComponentsTest.metal in Sources */ = {isa = PBXBuildFile; fileRef = 503BBC9F19DF22AE002219B6 /* MTLPVectorComponentsTest.metal */; };
 		503BBCA319DF22AE002219B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 503BBCA119DF22AE002219B6 /* Main.storyboard */; };
 		503BBCA519DF22AE002219B6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 503BBCA419DF22AE002219B6 /* Images.xcassets */; };
 		503BBCA819DF22AE002219B6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 503BBCA619DF22AE002219B6 /* LaunchScreen.xib */; };
 		503BBCBD19DF235B002219B6 /* MTLPTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 503BBCBC19DF235B002219B6 /* MTLPTest.m */; };
 		503BBCD019DF277B002219B6 /* MTLPVectorComponentsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 503BBCCF19DF277B002219B6 /* MTLPVectorComponentsTest.m */; };
-		503BBCD519DF3529002219B6 /* metalplus_types in Resources */ = {isa = PBXBuildFile; fileRef = 503BBCD419DF3529002219B6 /* metalplus_types */; };
-		503BBCD719DF3548002219B6 /* metalplus_math in Resources */ = {isa = PBXBuildFile; fileRef = 503BBCD619DF3548002219B6 /* metalplus_math */; };
+		50EFA5DA19AF3D3B00441F09 /* MTLPTexture+CGImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 50EFA5D919AF3D3B00441F09 /* MTLPTexture+CGImage.m */; };
+		50EFA5DD19AF3D4700441F09 /* MTLPTexture+UIImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 50EFA5DC19AF3D4700441F09 /* MTLPTexture+UIImage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -39,16 +37,12 @@
 		50157BA8196A674000FB5F5B /* MetalPlus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MetalPlus.h; sourceTree = "<group>"; };
 		50157BA9196A674000FB5F5B /* MTLPView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTLPView.h; sourceTree = "<group>"; };
 		50157BAA196A674000FB5F5B /* MTLPView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTLPView.m; sourceTree = "<group>"; };
-		50EFA5D819AF3D3B00441F09 /* MTLPTexture+CGImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MTLPTexture+CGImage.h"; sourceTree = "<group>"; };
-		50EFA5D919AF3D3B00441F09 /* MTLPTexture+CGImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MTLPTexture+CGImage.m"; sourceTree = "<group>"; };
-		50EFA5DB19AF3D4700441F09 /* MTLPTexture+UIImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MTLPTexture+UIImage.h"; sourceTree = "<group>"; };
-		50EFA5DC19AF3D4700441F09 /* MTLPTexture+UIImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MTLPTexture+UIImage.m"; sourceTree = "<group>"; };
 		503BBC9319DF22AE002219B6 /* MetalPlusTests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MetalPlusTests.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		503BBC9619DF22AE002219B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		503BBC9719DF22AE002219B6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		503BBC9919DF22AE002219B6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		503BBC9A19DF22AE002219B6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		503BBC9F19DF22AE002219B6 /* Shaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
+		503BBC9F19DF22AE002219B6 /* MTLPVectorComponentsTest.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = MTLPVectorComponentsTest.metal; sourceTree = "<group>"; };
 		503BBCA219DF22AE002219B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		503BBCA419DF22AE002219B6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		503BBCA719DF22AE002219B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -57,6 +51,10 @@
 		503BBCCF19DF277B002219B6 /* MTLPVectorComponentsTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTLPVectorComponentsTest.m; sourceTree = "<group>"; };
 		503BBCD419DF3529002219B6 /* metalplus_types */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = metalplus_types; sourceTree = "<group>"; };
 		503BBCD619DF3548002219B6 /* metalplus_math */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = metalplus_math; sourceTree = "<group>"; };
+		50EFA5D819AF3D3B00441F09 /* MTLPTexture+CGImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MTLPTexture+CGImage.h"; sourceTree = "<group>"; };
+		50EFA5D919AF3D3B00441F09 /* MTLPTexture+CGImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MTLPTexture+CGImage.m"; sourceTree = "<group>"; };
+		50EFA5DB19AF3D4700441F09 /* MTLPTexture+UIImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MTLPTexture+UIImage.h"; sourceTree = "<group>"; };
+		50EFA5DC19AF3D4700441F09 /* MTLPTexture+UIImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MTLPTexture+UIImage.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,14 +114,14 @@
 			children = (
 				503BBC9919DF22AE002219B6 /* AppDelegate.h */,
 				503BBC9A19DF22AE002219B6 /* AppDelegate.m */,
-				503BBC9F19DF22AE002219B6 /* Shaders.metal */,
+				503BBCCF19DF277B002219B6 /* MTLPVectorComponentsTest.m */,
+				503BBC9F19DF22AE002219B6 /* MTLPVectorComponentsTest.metal */,
 				503BBCA119DF22AE002219B6 /* Main.storyboard */,
 				503BBCA419DF22AE002219B6 /* Images.xcassets */,
 				503BBCA619DF22AE002219B6 /* LaunchScreen.xib */,
 				503BBC9519DF22AE002219B6 /* Supporting Files */,
 				503BBCBB19DF235B002219B6 /* MTLPTest.h */,
 				503BBCBC19DF235B002219B6 /* MTLPTest.m */,
-				503BBCCF19DF277B002219B6 /* MTLPVectorComponentsTest.m */,
 			);
 			path = MetalPlusTests;
 			sourceTree = "<group>";
@@ -215,10 +213,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				503BBCD719DF3548002219B6 /* metalplus_math in Resources */,
 				503BBCA319DF22AE002219B6 /* Main.storyboard in Resources */,
 				503BBCA819DF22AE002219B6 /* LaunchScreen.xib in Resources */,
-				503BBCD519DF3529002219B6 /* metalplus_types in Resources */,
 				503BBCA519DF22AE002219B6 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -240,7 +236,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				503BBCA019DF22AE002219B6 /* Shaders.metal in Sources */,
+				503BBCA019DF22AE002219B6 /* MTLPVectorComponentsTest.metal in Sources */,
 				503BBCBD19DF235B002219B6 /* MTLPTest.m in Sources */,
 				503BBCD019DF277B002219B6 /* MTLPVectorComponentsTest.m in Sources */,
 				503BBC9B19DF22AE002219B6 /* AppDelegate.m in Sources */,
@@ -428,6 +424,7 @@
 				503BBCB719DF22AE002219B6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

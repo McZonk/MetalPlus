@@ -61,7 +61,10 @@
 				
 					@try
 					{
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Warc-performSelector-leaks"
 						[test performSelector:selector];
+#pragma clang diagnostic pop
 					}
 					@catch (NSException *exception)
 					{

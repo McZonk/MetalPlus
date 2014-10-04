@@ -16,7 +16,8 @@ using namespace metal;
 using namespace metalplus;
 
 
-kernel void testVectorMaxComponent(
+
+kernel void testVector4MaxComponent(
 	const device float4 *ins [[ buffer(0) ]],
 	device float *outs [[ buffer(1) ]],
 	uint index [[ thread_position_in_grid ]]
@@ -27,3 +28,19 @@ kernel void testVectorMaxComponent(
 	
 	outs[index] = out;
 }
+
+
+kernel void testVector4MinComponent(
+	const device float4 *ins [[ buffer(0) ]],
+	device float *outs [[ buffer(1) ]],
+	uint index [[ thread_position_in_grid ]]
+) {
+	float4 in = ins[index];
+	
+	float out = minComponent(in);
+	
+	outs[index] = out;
+}
+
+
+

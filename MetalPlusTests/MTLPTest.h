@@ -1,7 +1,5 @@
 #import <Foundation/Foundation.h>
 
-#define MTLPAssert(expression) \
-
 
 @interface MTLPTest : NSObject
 
