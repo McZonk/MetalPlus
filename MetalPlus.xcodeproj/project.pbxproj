@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		50157BAB196A674000FB5F5B /* MTLPView.m in Sources */ = {isa = PBXBuildFile; fileRef = 50157BAA196A674000FB5F5B /* MTLPView.m */; };
+		50EFA5DA19AF3D3B00441F09 /* MTLPTexture+CGImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 50EFA5D919AF3D3B00441F09 /* MTLPTexture+CGImage.m */; };
+		50EFA5DD19AF3D4700441F09 /* MTLPTexture+UIImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 50EFA5DC19AF3D4700441F09 /* MTLPTexture+UIImage.m */; };
 		503BBC9819DF22AE002219B6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 503BBC9719DF22AE002219B6 /* main.m */; };
 		503BBC9B19DF22AE002219B6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 503BBC9A19DF22AE002219B6 /* AppDelegate.m */; };
 		503BBCA019DF22AE002219B6 /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 503BBC9F19DF22AE002219B6 /* Shaders.metal */; };
@@ -37,6 +39,10 @@
 		50157BA8196A674000FB5F5B /* MetalPlus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MetalPlus.h; sourceTree = "<group>"; };
 		50157BA9196A674000FB5F5B /* MTLPView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTLPView.h; sourceTree = "<group>"; };
 		50157BAA196A674000FB5F5B /* MTLPView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTLPView.m; sourceTree = "<group>"; };
+		50EFA5D819AF3D3B00441F09 /* MTLPTexture+CGImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MTLPTexture+CGImage.h"; sourceTree = "<group>"; };
+		50EFA5D919AF3D3B00441F09 /* MTLPTexture+CGImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MTLPTexture+CGImage.m"; sourceTree = "<group>"; };
+		50EFA5DB19AF3D4700441F09 /* MTLPTexture+UIImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MTLPTexture+UIImage.h"; sourceTree = "<group>"; };
+		50EFA5DC19AF3D4700441F09 /* MTLPTexture+UIImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MTLPTexture+UIImage.m"; sourceTree = "<group>"; };
 		503BBC9319DF22AE002219B6 /* MetalPlusTests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MetalPlusTests.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		503BBC9619DF22AE002219B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		503BBC9719DF22AE002219B6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -93,6 +99,10 @@
 			isa = PBXGroup;
 			children = (
 				50157BA8196A674000FB5F5B /* MetalPlus.h */,
+				50EFA5D819AF3D3B00441F09 /* MTLPTexture+CGImage.h */,
+				50EFA5D919AF3D3B00441F09 /* MTLPTexture+CGImage.m */,
+				50EFA5DB19AF3D4700441F09 /* MTLPTexture+UIImage.h */,
+				50EFA5DC19AF3D4700441F09 /* MTLPTexture+UIImage.m */,
 				50157BA9196A674000FB5F5B /* MTLPView.h */,
 				50157BAA196A674000FB5F5B /* MTLPView.m */,
 				503BBCD419DF3529002219B6 /* metalplus_types */,
@@ -220,6 +230,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50EFA5DD19AF3D4700441F09 /* MTLPTexture+UIImage.m in Sources */,
+				50EFA5DA19AF3D3B00441F09 /* MTLPTexture+CGImage.m in Sources */,
 				50157BAB196A674000FB5F5B /* MTLPView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
