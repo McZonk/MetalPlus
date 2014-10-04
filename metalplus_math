@@ -1,0 +1,25 @@
+#ifndef __METALPLUS_MATH
+#define __METALPLUS_MATH
+
+#include "metalplus_types"
+
+METALPLUS_NAMESPACE_BEGIN
+
+using namespace metal;
+
+METAL_FUNC float maxComponent(float2 v) {
+	return max(v.x, v.y);
+}
+
+METAL_FUNC float maxComponent(float3 v) {
+	return max(v.x, max(v.y, v.z));
+}
+
+METAL_FUNC float maxComponent(float4 v) {
+	float2 v2 = max(v.xy, v.zw);
+	return max(v2.x, v2.y);
+}
+
+METALPLUS_NAMESPACE_END
+
+#endif /* __METALPLUS_MATH */

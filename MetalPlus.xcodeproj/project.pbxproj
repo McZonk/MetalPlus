@@ -8,6 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		50157BAB196A674000FB5F5B /* MTLPView.m in Sources */ = {isa = PBXBuildFile; fileRef = 50157BAA196A674000FB5F5B /* MTLPView.m */; };
+		503BBC9819DF22AE002219B6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 503BBC9719DF22AE002219B6 /* main.m */; };
+		503BBC9B19DF22AE002219B6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 503BBC9A19DF22AE002219B6 /* AppDelegate.m */; };
+		503BBCA019DF22AE002219B6 /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 503BBC9F19DF22AE002219B6 /* Shaders.metal */; };
+		503BBCA319DF22AE002219B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 503BBCA119DF22AE002219B6 /* Main.storyboard */; };
+		503BBCA519DF22AE002219B6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 503BBCA419DF22AE002219B6 /* Images.xcassets */; };
+		503BBCA819DF22AE002219B6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 503BBCA619DF22AE002219B6 /* LaunchScreen.xib */; };
+		503BBCBD19DF235B002219B6 /* MTLPTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 503BBCBC19DF235B002219B6 /* MTLPTest.m */; };
+		503BBCD019DF277B002219B6 /* MTLPVectorComponentsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 503BBCCF19DF277B002219B6 /* MTLPVectorComponentsTest.m */; };
+		503BBCD519DF3529002219B6 /* metalplus_types in Resources */ = {isa = PBXBuildFile; fileRef = 503BBCD419DF3529002219B6 /* metalplus_types */; };
+		503BBCD719DF3548002219B6 /* metalplus_math in Resources */ = {isa = PBXBuildFile; fileRef = 503BBCD619DF3548002219B6 /* metalplus_math */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,10 +37,31 @@
 		50157BA8196A674000FB5F5B /* MetalPlus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MetalPlus.h; sourceTree = "<group>"; };
 		50157BA9196A674000FB5F5B /* MTLPView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTLPView.h; sourceTree = "<group>"; };
 		50157BAA196A674000FB5F5B /* MTLPView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTLPView.m; sourceTree = "<group>"; };
+		503BBC9319DF22AE002219B6 /* MetalPlusTests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MetalPlusTests.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		503BBC9619DF22AE002219B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		503BBC9719DF22AE002219B6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		503BBC9919DF22AE002219B6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		503BBC9A19DF22AE002219B6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		503BBC9F19DF22AE002219B6 /* Shaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
+		503BBCA219DF22AE002219B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		503BBCA419DF22AE002219B6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		503BBCA719DF22AE002219B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		503BBCBB19DF235B002219B6 /* MTLPTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTLPTest.h; sourceTree = "<group>"; };
+		503BBCBC19DF235B002219B6 /* MTLPTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTLPTest.m; sourceTree = "<group>"; };
+		503BBCCF19DF277B002219B6 /* MTLPVectorComponentsTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTLPVectorComponentsTest.m; sourceTree = "<group>"; };
+		503BBCD419DF3529002219B6 /* metalplus_types */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = metalplus_types; sourceTree = "<group>"; };
+		503BBCD619DF3548002219B6 /* metalplus_math */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = metalplus_math; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		50157B7E196A646D00FB5F5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		503BBC9019DF22AE002219B6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -44,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				50157BA7196A673300FB5F5B /* MetalPlus */,
+				503BBC9419DF22AE002219B6 /* MetalPlusTests */,
 				50157B82196A646D00FB5F5B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				50157B81196A646D00FB5F5B /* libMetalPlus.a */,
+				503BBC9319DF22AE002219B6 /* MetalPlusTests.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -62,8 +95,36 @@
 				50157BA8196A674000FB5F5B /* MetalPlus.h */,
 				50157BA9196A674000FB5F5B /* MTLPView.h */,
 				50157BAA196A674000FB5F5B /* MTLPView.m */,
+				503BBCD419DF3529002219B6 /* metalplus_types */,
+				503BBCD619DF3548002219B6 /* metalplus_math */,
 			);
 			name = MetalPlus;
+			sourceTree = "<group>";
+		};
+		503BBC9419DF22AE002219B6 /* MetalPlusTests */ = {
+			isa = PBXGroup;
+			children = (
+				503BBC9919DF22AE002219B6 /* AppDelegate.h */,
+				503BBC9A19DF22AE002219B6 /* AppDelegate.m */,
+				503BBC9F19DF22AE002219B6 /* Shaders.metal */,
+				503BBCA119DF22AE002219B6 /* Main.storyboard */,
+				503BBCA419DF22AE002219B6 /* Images.xcassets */,
+				503BBCA619DF22AE002219B6 /* LaunchScreen.xib */,
+				503BBC9519DF22AE002219B6 /* Supporting Files */,
+				503BBCBB19DF235B002219B6 /* MTLPTest.h */,
+				503BBCBC19DF235B002219B6 /* MTLPTest.m */,
+				503BBCCF19DF277B002219B6 /* MTLPVectorComponentsTest.m */,
+			);
+			path = MetalPlusTests;
+			sourceTree = "<group>";
+		};
+		503BBC9519DF22AE002219B6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				503BBC9619DF22AE002219B6 /* Info.plist */,
+				503BBC9719DF22AE002219B6 /* main.m */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,6 +147,23 @@
 			productReference = 50157B81196A646D00FB5F5B /* libMetalPlus.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		503BBC9219DF22AE002219B6 /* MetalPlusTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 503BBCB519DF22AE002219B6 /* Build configuration list for PBXNativeTarget "MetalPlusTests" */;
+			buildPhases = (
+				503BBC8F19DF22AE002219B6 /* Sources */,
+				503BBC9019DF22AE002219B6 /* Frameworks */,
+				503BBC9119DF22AE002219B6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MetalPlusTests;
+			productName = MetalPlusTests;
+			productReference = 503BBC9319DF22AE002219B6 /* MetalPlusTests.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -98,6 +176,9 @@
 					50157B80196A646D00FB5F5B = {
 						CreatedOnToolsVersion = 6.0;
 					};
+					503BBC9219DF22AE002219B6 = {
+						CreatedOnToolsVersion = 6.1;
+					};
 				};
 			};
 			buildConfigurationList = 50157B7C196A646D00FB5F5B /* Build configuration list for PBXProject "MetalPlus" */;
@@ -106,6 +187,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 50157B78196A646D00FB5F5B;
 			productRefGroup = 50157B82196A646D00FB5F5B /* Products */;
@@ -113,9 +195,25 @@
 			projectRoot = "";
 			targets = (
 				50157B80196A646D00FB5F5B /* MetalPlus */,
+				503BBC9219DF22AE002219B6 /* MetalPlusTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		503BBC9119DF22AE002219B6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				503BBCD719DF3548002219B6 /* metalplus_math in Resources */,
+				503BBCA319DF22AE002219B6 /* Main.storyboard in Resources */,
+				503BBCA819DF22AE002219B6 /* LaunchScreen.xib in Resources */,
+				503BBCD519DF3529002219B6 /* metalplus_types in Resources */,
+				503BBCA519DF22AE002219B6 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		50157B7D196A646D00FB5F5B /* Sources */ = {
@@ -126,7 +224,38 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		503BBC8F19DF22AE002219B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				503BBCA019DF22AE002219B6 /* Shaders.metal in Sources */,
+				503BBCBD19DF235B002219B6 /* MTLPTest.m in Sources */,
+				503BBCD019DF277B002219B6 /* MTLPVectorComponentsTest.m in Sources */,
+				503BBC9B19DF22AE002219B6 /* AppDelegate.m in Sources */,
+				503BBC9819DF22AE002219B6 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		503BBCA119DF22AE002219B6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				503BBCA219DF22AE002219B6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		503BBCA619DF22AE002219B6 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				503BBCA719DF22AE002219B6 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		50157B93196A646D00FB5F5B /* Debug */ = {
@@ -231,6 +360,34 @@
 			};
 			name = Release;
 		};
+		503BBCB619DF22AE002219B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MetalPlusTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		503BBCB719DF22AE002219B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = MetalPlusTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -251,6 +408,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		503BBCB519DF22AE002219B6 /* Build configuration list for PBXNativeTarget "MetalPlusTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				503BBCB619DF22AE002219B6 /* Debug */,
+				503BBCB719DF22AE002219B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
