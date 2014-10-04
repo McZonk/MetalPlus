@@ -7,18 +7,20 @@ METALPLUS_NAMESPACE_BEGIN
 
 using namespace metal;
 
-METAL_FUNC float maxComponent(float2 v) {
-	return max(v.x, v.y);
+METAL_FUNC template<typename T> T maxComponent(vec<T, 2> v) {
+	return max(v[0], v[1]);
 }
 
-METAL_FUNC float maxComponent(float3 v) {
-	return max(v.x, max(v.y, v.z));
+METAL_FUNC template<typename T> T maxComponent(vec<T, 3> v) {
+	return max(v[0], max(v[1], v[2]));
 }
 
-METAL_FUNC float maxComponent(float4 v) {
-	float2 v2 = max(v.xy, v.zw);
-	return max(v2.x, v2.y);
+METAL_FUNC template<typename T> T maxComponent(vec<T, 4> v) {
+	vec<T, 2> v2 = max(vec<T, 2>(v[0], v[1]), vec<T, 2>(v[2], v[3]));
+	return max(v2[0], v2[1]);
 }
+
+METAL_FUNC template<typename T>
 
 METALPLUS_NAMESPACE_END
 
