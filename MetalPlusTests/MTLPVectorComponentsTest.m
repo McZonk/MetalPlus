@@ -56,7 +56,7 @@
 	};
 	
 	id<MTLBuffer> inputBuffer = [device newBufferWithBytes:input length:sizeof(input) options:MTLResourceOptionCPUCacheModeDefault];
-	id<MTLBuffer> outputBuffer = [device newBufferWithLength:sizeof(float) options:MTLResourceOptionCPUCacheModeDefault];
+	id<MTLBuffer> outputBuffer = [device newBufferWithLength:sizeof(expectedOutput) options:MTLResourceOptionCPUCacheModeDefault];
 
 	id<MTLCommandQueue> commandQueue = [device newCommandQueue];
 	
@@ -68,7 +68,7 @@
 	[commandEncoder setBuffer:inputBuffer offset:0 atIndex:0];
 	[commandEncoder setBuffer:outputBuffer offset:0 atIndex:1];
 	
-	[commandEncoder dispatchThreadgroups:MTLSizeMake(COUNT, 1, 1) threadsPerThreadgroup:MTLSizeMake(COUNT, 1, 1)];
+	[commandEncoder dispatchThreadgroups:MTLSizeMake(COUNT, 1, 1) threadsPerThreadgroup:MTLSizeMake(1, 1, 1)];
 	
 	[commandEncoder endEncoding];
 	
@@ -120,7 +120,7 @@
 	};
 	
 	id<MTLBuffer> inputBuffer = [device newBufferWithBytes:input length:sizeof(input) options:MTLResourceOptionCPUCacheModeDefault];
-	id<MTLBuffer> outputBuffer = [device newBufferWithLength:sizeof(float) options:MTLResourceOptionCPUCacheModeDefault];
+	id<MTLBuffer> outputBuffer = [device newBufferWithLength:sizeof(expectedOutput) options:MTLResourceOptionCPUCacheModeDefault];
 	
 	id<MTLCommandQueue> commandQueue = [device newCommandQueue];
 	
@@ -132,7 +132,7 @@
 	[commandEncoder setBuffer:inputBuffer offset:0 atIndex:0];
 	[commandEncoder setBuffer:outputBuffer offset:0 atIndex:1];
 	
-	[commandEncoder dispatchThreadgroups:MTLSizeMake(COUNT, 1, 1) threadsPerThreadgroup:MTLSizeMake(COUNT, 1, 1)];
+	[commandEncoder dispatchThreadgroups:MTLSizeMake(COUNT, 1, 1) threadsPerThreadgroup:MTLSizeMake(1, 1, 1)];
 	
 	[commandEncoder endEncoding];
 	
