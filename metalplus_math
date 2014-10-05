@@ -9,30 +9,30 @@ using namespace metal;
 
 // maxComponent
 
-template<typename T> METAL_FUNC T maxComponent(vec<T, 2> v) {
+template<typename T> METAL_FUNC T max_component(vec<T, 2> v) {
 	return max(v[0], v[1]);
 }
 
-template<typename T> METAL_FUNC T maxComponent(vec<T, 3> v) {
+template<typename T> METAL_FUNC T max_component(vec<T, 3> v) {
 	return max(v[0], max(v[1], v[2]));
 }
 
-template<typename T> METAL_FUNC T maxComponent(vec<T, 4> v) {
+template<typename T> METAL_FUNC T max_component(vec<T, 4> v) {
 	vec<T, 2> v2 = max(vec<T, 2>(v[0], v[1]), vec<T, 2>(v[2], v[3]));
 	return max(v2[0], v2[1]);
 }
 
 // minComponent
 
-template<typename T> METAL_FUNC T minComponent(vec<T, 2> v) {
+template<typename T> METAL_FUNC T min_component(vec<T, 2> v) {
 	return min(v[0], v[1]);
 }
 
-template<typename T> METAL_FUNC T minComponent(vec<T, 3> v) {
+template<typename T> METAL_FUNC T min_component(vec<T, 3> v) {
 	return min(v[0], min(v[1], v[2]));
 }
 
-template<typename T> METAL_FUNC T minComponent(vec<T, 4> v) {
+template<typename T> METAL_FUNC T min_component(vec<T, 4> v) {
 	vec<T, 2> v2 = min(vec<T, 2>(v[0], v[1]), vec<T, 2>(v[2], v[3]));
 	return min(v2[0], v2[1]);
 }

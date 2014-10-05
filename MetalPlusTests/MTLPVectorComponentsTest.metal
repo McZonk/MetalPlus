@@ -24,7 +24,7 @@ kernel void testVector4MaxComponent(
 ) {
 	float4 in = ins[index];
 	
-	float out = maxComponent(in);
+	float out = max_component(in);
 	
 	outs[index] = out;
 }
@@ -37,7 +37,7 @@ kernel void testVector4MinComponent(
 ) {
 	float4 in = ins[index];
 	
-	float out = minComponent(in);
+	float out = min_component(in);
 	
 	outs[index] = out;
 }
