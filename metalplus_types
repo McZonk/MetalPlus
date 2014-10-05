@@ -5,12 +5,12 @@
 
 #ifndef __INLINE__
 #warning __INLINE__ is not defined
-#define __INLINE__ inline __INLINE__
+#define __INLINE__ inline __attribute__((__always_inline__))
 #endif
 
 #ifndef METAL_FUNC
 #warning METAL_FUNC is not defined
-#define METAL_FUNC inline __attribute__((__always_inline__))
+#define METAL_FUNC inline __INLINE__
 #endif
 
 #define METALPLUS_NAMESPACE_BEGIN namespace metalplus {
